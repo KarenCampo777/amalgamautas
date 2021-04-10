@@ -1,6 +1,6 @@
 # amalgamautas
 
-A new Flutter application.
+A new application.
 
 ## Getting Started
 
