@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547058247390",
+    "project_id": "amalgamautas",
+    "storage_bucket": "amalgamautas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547058247390:android:a11eac6dd914bd4643044f",
+        "android_client_info": {
+          "package_name": "com.buziraco.amalgamautas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547058247390-aindg91iniun02kiueg5e2f00t3c17s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWI_GSR1EiN-fnnALKHG8SAzw-WYjNfgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547058247390-aindg91iniun02kiueg5e2f00t3c17s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
