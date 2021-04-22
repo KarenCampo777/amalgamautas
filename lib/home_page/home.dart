@@ -1,5 +1,5 @@
 import 'package:amalgamautas/order/create_order.dart';
-import 'package:amalgamautas/products/product_list.dart';
+import 'package:amalgamautas/order/list_order.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
               label: Text('Create Order', style: GoogleFonts.comicNeue(color: Colors.white),))
         ],
       ),
-      body: ProductList(),
+      body: ListOrder(),
     );
   }
 }
