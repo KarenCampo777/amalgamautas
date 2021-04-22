@@ -1,3 +1,5 @@
+import 'package:amalgamautas/class/register/register_login_class.dart';
+import 'package:amalgamautas/home_page/home.dart';
 import 'package:amalgamautas/initial_page/input_widget.dart';
 import 'package:amalgamautas/initial_page/register_page.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +14,7 @@ class _LoginPageState extends State<LoginPage> {
 
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
+  RegisterLoginClass _registerClass = RegisterLoginClass();
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,11 @@ class _LoginPageState extends State<LoginPage> {
                 input: password,
                 inputString: 'Password',
               ),
-              ElevatedButton(onPressed: () {}, child: Text('Login')),
+              ElevatedButton(onPressed: () {
+                _registerClass.loginUser(email: email.text, password: password.text).then((value){
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Home()));
+                });
+              }, child: Text('Login')),
               TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (context) => RegisterPage()));
